@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Ram</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+    <!-- INICIO PANT JUEGO -->
+    <div class="pure-g" id="pantallaJuego">
+        <div class="pure-u-1">
+            <img src="./images/cards/logoVerde.png" alt="logoVerde" class="logo">
+            <h1 id="memoram">MEMORAM</h1>
+        </div>
+
+        <div class="pure-u-6-24">
+            <div class="menu">
+                <div class="cajaNombre">
+                    <h3 id="nombreJugador">xxxxxxxx</h3>
+                    <div class="estrellas">
+                        <span class="star-1">⭐</span>
+                        <span class="star-2">⭐</span>
+                        <span class="star-3">⭐</span>
+                        <span class="star-4">⭐</span>
+                        <span class="star-5">⭐</span>
+                        <span class="star-6">⭐</span>
+                        <span class="star-7">⭐</span>
+                    </div>
+                </div>
+                <div class="actions">
+                    <h4 class="unit">🎮 Movimientos</h4>
+                    <h4 class="movimientos">0</h4>
+                    <h4 class="seconds">⏰ Segundos </h4>
+                    <h4 class="tiempo">0</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pure-u-18-24">
+            <div clas="pure-g" id="tablero">
+                <div class="wrapper"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- FIN PANTALLA JUEGO -->
+
+
+    <!-- INICIO VENTANA MODAL -->
+
+    <div class="modal_container ocultar" id="modal_tiempo">
+        <div class="modal_window">
+            <h2 class="modal_title">¡Se acábo el tiempo!</h2>
+            <button class="modal_button jugarTiempo">Renunciar</button> 
+            <button class="modal_button" id="modal_btn_renunciar_tiempo">Nueva partida</button>
+        </div>
+    </div>
+
+    <div class="modal_container ocultar" id="modal_ganador">
+        <div class="modal_window">
+            <h2 class="modal_title">¡Has ganado!</h2>
+      <!--       <button class="modal_button">Siguiente nivel</button> -->
+            <button class="modal_button" id="modal_btn_renunciar_ganador">Nueva partida</button>
+        </div>
+    </div>
+
+    <div class="modal_container ocultar" id="modal_perdedor">
+        <div class="modal_window">
+            <h2 class="modal_title perdiste">¡Has perdido!</h2>
+            <button class="modal_button jugarMovimientos">Renunciar</button>
+            <button class="modal_button" id="modal_btn_renunciar_perdedor">Nueva partida</button>
+        </div>
+    </div>
+    <!-- FIN VENTANA MODAL -->
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/juego.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>
